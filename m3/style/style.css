@@ -1,0 +1,192 @@
+dl, dt, dd, ol, ul, li
+fieldset, form, label,legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+    margin:  0;
+    padding:  0;
+    border:  0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+html{ height: 100%; }
+body{
+    height: 100%;
+    font: 13px/16px Arial, Tahoma, sans-serif;
+    color: #000;
+    background: #fff url("../img/bg.jpg") repeat;
+}
+ol, ul{ list-style: none; }
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+a, a:hover{
+    color: #000; 
+    text-decoration: none;
+}
+a:hover{ opacity: 0.7; }
+
+.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: table;
+}
+.clearfix:after{ clear: both; }
+
+.left{ float: left; }
+.right{ float: right; }
+.text-right{ text-align: right; }
+.text-center{ text-align: center; }
+
+/* */
+.center{
+    width: 960px; margin: 0 auto;
+}
+.panel-top{
+    border-top: 3px solid #cc3333;
+    background: #2a2b2c;
+    height: 33px;
+}
+.social{ 
+    padding: 4px 0;
+    float: left;
+}
+.social a{
+    display: inline-block;
+    vertical-align: middle;
+    width: 23px;
+    height: 23px;
+    background: url("../img/sprite-social.png") no-repeat center;  
+    
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+         -o-border-radius: 50%;
+            border-radius: 50%;
+}
+.social a.s-fb{ background-position: 0 0; }
+.social a.s-dribble{ background-position: -23px 0; }
+.social a.s-tw{ background-position: -46px 0; }
+.social a.s-mail{ background-position: -69px 0; }
+.social a.s-vimeo{ background-position: -92px 0; }
+
+.login{ 
+    float: right;
+    padding-top: 7px;
+}
+.login a,
+.login span{ color: #fff; }
+.login a:hover{ text-decoration: underline; }
+
+.basket{
+    background: #c33 url("../img/basket.png") no-repeat 8px 7px;
+    width: 90px;
+    float: right;
+    margin-left: 25px;
+    
+    -webkit-border-radius: 0 0 15px 15px;
+       -moz-border-radius: 0 0 15px 15px;
+         -o-border-radius: 0 0 15px 15px;
+            border-radius: 0 0 15px 15px;
+    overflow: hidden;
+}
+.basket a{
+    height: 45px;
+    display: block;
+    color: #fff;
+    padding: 15px 0 0 40px;
+}
+
+#header{
+    padding: 18px 0;
+}
+#logo img,
+#logo span{
+    display: inline-block;
+    vertical-align: middle;
+}
+#logo span{ font-size: 30px; }
+
+.nav{ margin-top: 25px }
+.nav li{ 
+    float: left;
+    position: relative;
+}
+.nav li:before{
+    content: "";
+    display: none;
+    position: absolute;
+    top: -17px;
+    width: 100%;
+    border-top: 4px solid #efc539;
+}
+.nav li.active:before,
+.nav li:hover:before{ display: block; }
+.nav li + li{ margin-left: 30px; }         /* add marjin to second and others el to the end */
+.nav li a{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
