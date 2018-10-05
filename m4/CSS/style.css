@@ -184,9 +184,19 @@ header{
     width: 15.62vw;
     background-color: #242b2e;
     color: #6b7072;
-    
+    box-shadow: 8px 0px 14px 0px #848484; 
+    flex-direction: column;
+    flex-flow: column nowrap;
+    display: flex;
 }
 
+#logo{
+    width: 100%;
+    height: 11.57vh;
+    background-color: #fff;
+}
+
+#logo img{width: 6vw}
 
 
 
