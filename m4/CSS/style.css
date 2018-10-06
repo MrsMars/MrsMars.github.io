@@ -413,19 +413,31 @@ main{
 .white{background-color: #fff;}
 
 .info_work_box .left_info,
-.info_work_box .right_info{width: 48%;}
+.info_work_box .right_info,
+.info_about_box .left_info,
+.info_about_box .right_info{width: 48%;}
 
-.info_work_box .left_info .img_box_work{
+.info_work_box .left_info .img_box_work,
+.info_about_box .about{
     width: 100%;
     overflow: hidden;
     height: 29.16vw;
 }
-.info_work_box .left_info .img_box_work img{
+
+.left_info .info_about_box{
+    width: 100%;
+    overflow: hidden;
+    height: 15.72vw;
+}
+
+.info_work_box .left_info .img_box_work img,
+.left_info .img_box_about img{
     width: 100%;
     height: auto;    
 }
 
-.info_work_box .left_info .about_work{
+.info_work_box .left_info .about_work,
+.info_about_box .about{
 	margin-top: 1.3vw;
     padding-bottom: 1.6vw;
     border-bottom: 1px solid #1ab5b3;
@@ -435,7 +447,8 @@ main{
 }
 
 .info_work_box .left_info .about_work h1,
-.title_info{
+.title_info,
+.info_about_box .about h1{
     font-size: 1.25vw;
     line-height: 1.36vw;
     color: #000;
@@ -443,8 +456,11 @@ main{
     font-weight: 400;
 }
 
-.info_work_box .left_info .about_work p{margin-bottom: 2.39vw;}
-.info_work_box .left_info .about_work p:last-of-type{margin-bottom: 0;}
+.info_work_box .left_info .about_work p,
+.info_about_box .about p{margin-bottom: 2.39vw;}
+
+.info_work_box .left_info .about_work p:last-of-type,
+.info_about_box .about p:last-of-type{margin-bottom: 0;}
 
 .pr_info li{
     list-style: none;
@@ -497,9 +513,9 @@ main{
 
 .pr_f li svg{
     fill: #1ab5b3;
-    width: 0.7vw;
-    height: 0.7vw;
-    margin-right: 1vw;
+    width: 0.6vw;
+    height: 0.6vw;
+    margin-right: 0.3vw;
 }
 
 .list_r_pr a{
@@ -513,15 +529,50 @@ main{
     width: 100%;
 }
 
-.list_r_pr{
+.list_r_pr,
+.staff_box{
     margin-top: 1.56vw;
 }
 
+/* about */
 
+.staff{
+    width: 11.82vw;
+    height: 9.37vw;
+    position: relative;
+    overflow: hidden;
+}
 
+.staff a{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(45,184,185,0.9);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    text-decoration: none;
+    font-size: 0.72vw;
+}
+.staff a:hover{
+    opacity: 1;
+}
 
+.staff{
+	position: absolute;
+    top: 0;
+    z-index: 0;  
+}
 
-
+.staff h4{
+    font-size: 0.83vw;
+}
 
 
 
