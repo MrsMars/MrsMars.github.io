@@ -492,7 +492,10 @@ main{
 }
 
 .gall,
-.our{margin-bottom: 1.56vw;}
+.our,
+.testimonials,
+.service{margin-bottom: 1.56vw;}
+
 .img_gal{
     width: 7vw;
     height: 7vw;
@@ -621,13 +624,42 @@ main{
     height: inherit; 
 }
 
+.testimonials .huw{
+    width: 100%;
+    height: 4.16vw;
+    background-color: #1ab5b3;
+    color: #fff;
+}
 
+.testimonials .huw h3{
+    font-style: italic;
+    font-size: 0.78vw;
+    font-weight: 400;
+    margin-left: 1.25vw;
+}
 
+.testimonials .huw img{
+    width: 4.16vw;
+    height: 4.16vw;
+}
 
+.testimonials_text{
+    padding: 1.56vw;
+    border: 1px solid #ececec;
+    color: #a3a3a3;
+    font-size: 0.93vw;
+    line-height: 1.56vw;
+}
 
+.service li{
+	font-size: 0.72vw;
+    color: #848484;
+    margin-bottom: 1vw;
+}
 
-
-
+.service ul{
+    list-style-position: inside;
+}
 
 
 
