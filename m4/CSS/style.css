@@ -365,7 +365,7 @@ main{
     cursor: pointer;
 }
 
-#main_nav .active {
+#main_nav .active{
 	background:    -moz-linear-gradient(top, #31bcba -1%, #18a3a1 100%);
     background: -webkit-linear-gradient(top, #31bcba -1%, #18a3a1 100%);
     background:         linear-gradient(top, #31bcba -1%, #18a3a1 100%);
@@ -481,6 +481,7 @@ main{
 
 .pr_info,
 .tags{margin-bottom: 1.56vw;}
+
 .tag{
     margin-right: 0.7vw;
     border: 1px solid #1ab5b3;
@@ -488,9 +489,7 @@ main{
     border-radius: 0.5vw;
     margin-bottom: 0.76vw;
 }
-.tag:last-child{
-    margin-right: 0;
-}
+.tag:last-child{margin-right: 0;}
 
 .gall,
 .our,
@@ -511,9 +510,7 @@ main{
     overflow: hidden;
 }
 
-.pr_f li{
-    list-style: none;
-}
+.pr_f li{list-style: none;}
 
 .pr_f li svg{
     fill: #1ab5b3;
@@ -529,14 +526,10 @@ main{
     overflow: hidden;
 }
 
-.list_r_pr a img{
-    width: 100%;
-}
+.list_r_pr a img{width: 100%;}
 
 .list_r_pr,
-.staff_box{
-    margin-top: 1.56vw;
-}
+.staff_box{margin-top: 1.56vw;}
 
 /* about */
 
@@ -549,9 +542,7 @@ main{
     margin-right: 0.7vw;
     margin-bottom: 1vw;
 }
-.staff:nth-of-type(3n){
-    margin-right: 0;	
-}
+.staff:nth-of-type(3n){margin-right: 0;}
 
 .staff a{
     display: flex;
@@ -570,9 +561,7 @@ main{
     text-decoration: none;
     font-size: 0.72vw;
 }
-.staff a:hover{
-    opacity: 1;
-}
+.staff a:hover{ opacity: 1;}
 
 .staff img{
 	position: absolute;
@@ -580,9 +569,7 @@ main{
     z-index: 0;  
 }
 
-.staff h4{
-    font-size: 0.83vw;
-}
+.staff h4{font-size: 0.83vw;}
 
 .you{
 	margin-right: 0;
@@ -658,9 +645,7 @@ main{
     margin-bottom: 1vw;
 }
 
-.service ul{
-    list-style-position: inside;
-}
+.service ul{list-style-position: inside;}
 
 /* blog */
 .wrap_blog{
@@ -684,9 +669,7 @@ main{
     overflow: hidden;
 }
 
-.img_post img{
-    width: 100%;
-}
+.img_post img{width: 100%;}
 
 .img_post_h1 {height: 12vw;}      /* 230 */
 .img_post_h2 {height: 13.6vw;}    /* 262 */
@@ -708,9 +691,7 @@ main{
     font-weight: 400;
 }
 
-.info_post {
-	padding: 1vw;
-}
+.info_post {padding: 1vw;}
 
 .info_post svg{
 	height: 0.83vw;
@@ -718,9 +699,7 @@ main{
     margin-right: 0.5vw;
 }
 
-.com_post {
-	margin-right: 1vw;
-}
+.com_post {margin-right: 1vw;}
 
 .single_link a{
     position: relative;
@@ -782,9 +761,7 @@ main{
     margin-bottom: 0.78vw;
 }
 
-.post_form p{
-    font-size: 0.72vw;
-}
+.post_form p{font-size: 0.72vw;}
 
 .rew{
     background-color: #242b2e;
@@ -844,13 +821,9 @@ main{
     position: relative;
 }
 
-#list_comments li{
-    margin-bottom: 1.66vw;
-}
+#list_comments li{margin-bottom: 1.66vw;}
 
-.img_comment img{
-    height: 100%;
-}
+.img_comment img{height: 100%;}
 
 .img_comment{
     width: 4.16vw;
@@ -868,9 +841,7 @@ main{
     padding-bottom: 0.5vw;   
 }
 
-.about_comment h5 span{
-    color: #d1d1d1;
-}
+.about_comment h5 span{color: #d1d1d1;}
 
 .about_comment p{
 	color: #a3a3a3;
@@ -897,25 +868,17 @@ main{
     fill:1ab5b3;
 }
 
-.form_comment{
-    margin-top: 1vw;  
-}
+.form_comment{margin-top: 1vw;}
 
 #left_form{
     width: 50%;
     padding-right: 0.5vw;
 }
 
-#right_form{
-    width: 50%;  
-}
+#right_form{width: 50%;}
 
-#left_form .input{
-    margin-bottom: 0.5vw;
-}
-#left_form .input:last-of-type{
-    margin-bottom: 0;
-}
+#left_form .input{margin-bottom: 0.5vw;}
+#left_form .input:last-of-type{margin-bottom: 0;}
 
 .input input,
 .input textarea{
@@ -968,22 +931,55 @@ main{
     color: #727272;
     padding: 0.2vw 0;
     cursor: pointer;
+}
+.pr_f li:hover{color: #000;}
+
+/* contact */
+#box_contact{
+    width: 40.72vw;
+    padding: 1.56vw;
+    position: relative;
+    z-index: 2;
+}
+
+#info_contact{
+    color: #a3a3a3;
+    padding-bottom: 1.6vw;
+    border-bottom: 1px solid #1ab5b3;
+    margin-bottom: 1.6vw;
+}
+
+#map{
+    background-image: url('../img/map.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#map .wrap{margin: 0;}
+
+#map_google{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+/* media */
+@media
+    only screen and (min-device-width: 320px) and (max-device-width: 480px),
+    only screen and (max-width: 320px),
+    only screen and (min-device-width: 768px) and (max-device-width: 1024px)
     
+{
+    header{
+        position: relative;
+        width: 100%;
+    }
 }
-.pr_f li:hover{
-    color: #000;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
