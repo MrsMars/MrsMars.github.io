@@ -978,6 +978,15 @@ main{
     header{
         position: relative;
         width: 100%;
+        height: auto;
+    }
+    
+    #logo{
+        height: 20vh;
+    }
+    
+    #logo img{
+        width: 35vw;
     }
 }
 
