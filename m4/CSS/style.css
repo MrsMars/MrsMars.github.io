@@ -968,6 +968,8 @@ main{
     width: 100%;
 }
 
+#menu_btn{display: none;}
+
 /* media */
 @media
     only screen and (min-device-width: 320px) and (max-device-width: 480px),
@@ -981,13 +983,253 @@ main{
         height: auto;
     }
     
-    #logo{
-        height: 20vh;
+    #logo{height: 20vh;}
+    
+    #logo img{width: 35vw;}
+    
+    #main_nav a{
+        justify-content: center;
+        font-size: 2.5vmax;
+        height: 6vmax;
     }
     
-    #logo img{
-        width: 35vw;
+    #main_nav,
+    #filter,
+    #soc_bar,
+    #cop{display: none;}
+    
+    #main_nav.open{display: block;}
+    
+    #menu_btn{
+        display: block;
+        font-size: 3vmax;
+        color: #1ab5b3;
+        padding: 3vw;
+        width: 100%;     
+        background-color: #242b2e;
+        box-shadow: 8px 0px 14px 0px rgba(70,70,70,0.55); 
     }
+    
+    main{padding-left: 0;}
+    
+    .work_box{
+        width: 50%;
+        height: 50vw;
+        max-width: 50vw;
+    }
+    
+    .info_work_box .left_info,
+    .info_work_box .right_info,
+    .info_about_box .left_info,
+    .info_about_box .right_info{width: 100%;}
+    
+    .info_work_box .left_info .img_box_work{height: 45vw;}
+    
+    .info_work_box .left_info .about_work,
+    .info_about_box .about{
+	    font-size: 3vw;
+        line-height: 6vw;
+        margin-top: 3vw;
+        padding-bottom: 3vw;
+    }
+    
+    .info_work_box .left_info .about_work h1,
+    .title_info,
+    .info_about_box .about h1{
+	    font-size: 4.25vw;
+        line-height: 6.35vw;
+    }
+    
+    .list_r_pr a{height: 20vw;}
+    
+    .right_info {margin-top: 3vw;}
+    
+    .pr_info li{
+        font-size: 3vw;
+        line-height: 12vw;
+    }
+    
+    .pr_info li img{
+        margin-right: 2.67vw;
+        height: 9vw;
+    }
+    
+    .tag{
+        font-size: 4vw;
+        padding: 2.83vw 3.09vw;
+        margin-right: 2.52vw;
+        margin-bottom: 2.52vw;
+    }
+    
+    .img_gal{
+        width: 20vw;
+        height: 20vw;
+    }
+    
+    .pr_f li{font-size: 4vw;}
+    
+    .pr_info, .tags, .gall, .our, 
+    .testimonials, .service {margin-bottom: 4vw;}
+    
+    .left_info .img_box_about{
+	    width: 100%;
+        overflow: hidden;
+        height: 40vw;
+    }
+    
+    .staff, .you{
+        width: 30vw;
+        height: 20vw;
+    }
+    
+    .you span{
+        font-size: 4vw;
+        border-radius: 1.6vw;
+        padding: 2.78vw 3vw;
+	}
+    
+    .our li{
+	    list-style: none;
+        display: block;
+        margin-bottom: 1.93vw;
+        font-size: 4vw;
+    }
+    
+    .prog{
+        width: 100%;
+        height: 7.77vw;
+    }
+    
+    .testimonials .huw{height: 10vw;}
+    
+    .testimonials .huw img{
+        height: 10vw;
+        width: 10vw;
+    }
+    
+    .testimonials .huw h3{
+        font-size: 4vw;
+        margin-left: 4vw;
+    }
+    
+    .testimonials_text {
+	    font-size: 4vw;
+        line-height: 6vw;
+    }
+    
+    .service {font-size: 1.72vw;}
+    
+    #list_post{flex-flow: column nowrap;}
+    
+    .box_post {
+	    width: 100%;
+        margin-bottom: 3vw;
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+    
+    .img_post .img_post_h2 {height: 40vw !important;}
+    
+    .about_post h2{
+	    font-size: 3.93vw;
+        margin-bottom: 2.78vw;
+        margin-top: 2.78vw;
+    }
+    
+    .info_post svg{
+	    height: 2.83vw;
+        margin-right: 1.5vw;
+    }
+    
+    .single_link a img,
+    .img_post img{width: 100%;}
+    
+    .another h3{
+        font-size: 3.72vw;
+        margin-bottom: 1.72vw;
+    }
+    
+    .post_form h2 {font-size: 2.09vw;}
+    
+    .post_form p{font-size: 1.72vw;}
+    
+    .rew h4{
+        font-size: 4.09vw;
+        line-height: 5.35vw;
+    }
+    
+    .name_rew {font-size: 3.93vw;}
+    
+    .more {font-size: 3vw;}
+    
+    #box_contact{width: 100%;}
+    
+    #box_comment form{flex-direction: column;}
+    
+    #left_form, #right_form{
+        width: 100%;
+        padding: 0;
+    }
+    
+    .input input, .input textarea{
+        min-height: 10vw;
+        font-size: 1.72vmax;
+    }
+    
+    .icon_form {
+	    height: 10vw;
+        width: 10vw;
+    }
+    
+    .icon_form img {
+        width: 4.66vw;
+        height: 4.66vw;
+    }
+    
+    #right_form .input textarea{
+        resize: none;
+        height: 50vw;
+    }
+    
+    #right_form button{
+        height: 10vw;
+        font-size: 3vw;
+    }
+    
+    #list_comments li{margin-bottom: 3vw;}
+    
+    .img_comment {
+	    width: 10vw;
+        height: 10vw;
+    }
+    
+    .about_comment h5{font-size: 3vw;}
+    
+    .about_comment p{
+        font-size: 2.93vw;
+        margin-top: 0.83vw;
+    }
+    
+    #info{
+        width: 10vw;
+        height: 10vw;
+    }
+    
+    #info_box{
+        top: 10vw;
+        padding: 3vw 3.85vw 3vw 3vw;
+    }
+    
+    #info_box li{
+        font-size: 2.83vmax;
+        line-height: 3.78vmax;
+    }
+    
+    #info_box svg{
+        height: 3.88vw;
+        fill: #fff;
+        margin-right: 3.52vw;
+    }    
 }
 
 

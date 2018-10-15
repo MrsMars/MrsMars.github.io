@@ -13,4 +13,8 @@ $(function(){
         $(this).css('width', width + '%');
     });
     
+    // menu
+    $('#menu_btn').click(function(){
+        $('#main_nav').toggleClass('open');
+    }); 
 });
